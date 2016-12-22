@@ -14,11 +14,6 @@ function renderbar(data) {
     for (var d in data) {
         max_n = Math.max(data[d].times, max_n);
     }
-	
-//    console.log(chartwidth);
-//    console.log(max_n);
-//    console.log(chartheight);
-//    console.log(data.length);
     
     var dx = (chartwidth - 250) / max_n;
     
@@ -29,7 +24,6 @@ function renderbar(data) {
         .data(data)
         .enter()
         .append("rect")
-//        .attr("class", function(d, i) {return "bar " + d.topic;})
         .attr("x", function(d, i) {return 0;})
         .attr("y", function(d, i) {return (dy+5)*i;})
         .attr("width", 0)
@@ -50,12 +44,11 @@ function renderbar(data) {
         .style("font-size", "15px")
         .style("font-weight", "bold")
         .transition().duration(500);
-//});
+    
     var text1 = svg.selectAll(".text2")
         .data(data)
         .enter()
         .append("text")
-//        .attr("class", function(d, i) {return "label " + d.label;})
         .attr("x", 350)
         .attr("y", function(d, i) {return (dy+5)*i + 25;})
         .text( function(d) {return d.times;})
@@ -64,10 +57,7 @@ function renderbar(data) {
 }
 
 function setAll (month, x_from, x_to) {
-//        console.log(x_from);
-//        console.log(x_to);
         d3.json ("https://raw.githubusercontent.com/bw1332/VisualizationProj/master/source/fii.json", function(error, result) {
-        //renderbar(getBarData(getMonthSource(result,1), "sara.shackleton@enron.com", "susan.bailey@enron.com"));});
         data = getMonthSource(result,month);
         data1 = getBarData(data, x_from, x_to );
         data1.sort(function(a,b){
@@ -84,8 +74,6 @@ function setAll (month, x_from, x_to) {
 function setAllMonth(newMonth) {
     month = newMonth;
     setMonth(month);
-//    console.log(x_from);
-//    console.log(x_to);
     setAll(month, x_from, x_to);
 }
 
