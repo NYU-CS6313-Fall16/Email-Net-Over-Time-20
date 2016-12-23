@@ -26,6 +26,14 @@ Email is one of the most frequently used ways to communicate with others. Our pr
 
   When user clicks the blocks in the heat map, the bar chart shows the topics between these two persons in the given month. The topics are extracted from the content of their emails, which could help us a lot to understand what they are talking about and why the communications changes.
 
+### Code Structure
+
+  * index.html is the entry of the project. It has dependency on D3.js version 3.
+  * P2PHeatmap.js is to draw heatmap and it works with heatmap.css.
+  * linechart.js is to draw the line chart.
+  * legendBar.js is to draw bar chart.
+  * util.js provides some helper functions to format given data.
+
 ### Data Source
 
 We use open emails in year 2000. The profiled data could be fetched at [link](https://raw.githubusercontent.com/bw1332/VisualizationProj/master/source/fii.json)
