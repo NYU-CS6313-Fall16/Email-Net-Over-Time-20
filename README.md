@@ -5,7 +5,7 @@
 * Link : [https://bw1332.github.io/VisualizationProj/](https://bw1332.github.io/VisualizationProj/)
 * Video Demo : [https://vimeo.com/196754153]( https://vimeo.com/196754153)
 * Source Code : [source](https://github.com/NYU-CS6313-Fall16/Email-Net-Over-Time-20/tree/master/source)
-* Report Document :
+* Report Document : [document](https://github.com/NYU-CS6313-Fall16/Email-Net-Over-Time-20/blob/master/finalprojectreport.pdf)
 
 Team Members: [Bo Wang](https://github.com/bw1332), [Cheng Ma](https://github.com/tmxk2012197), [Hao Dong](https://github.com/FEhao), [Yulin Shen](https://github.com/Fancylynn)
 
