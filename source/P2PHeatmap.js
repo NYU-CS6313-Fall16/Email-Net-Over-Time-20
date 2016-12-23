@@ -106,6 +106,7 @@ function createHeatmap(data, allData) {
         .attr("width", heatmapCellSize)
         .attr("height", heatmapCellSize)
         .attr("x", function (d) {
+            //return xElementsArray.indexOf(d.Name1) * heatmapCellSize;
             return yScale(d.Name1);
         })
         .attr("y", function (d) {
@@ -140,6 +141,7 @@ function createHeatmap(data, allData) {
             d3.select(this).classed("cell-hover",false);
             d3.selectAll(".xLabel").classed("text-highlight",false);
             d3.selectAll(".yLabel").classed("text-highlight",false);
+            //tip.hide(d);
             d3.select("#tooltip").style({
                 visibility: "hidden",
                 opacity: 0
@@ -148,9 +150,11 @@ function createHeatmap(data, allData) {
     cells.exit().remove();
     cells.transition().duration(500)
         .attr("x", function (d) {
+        //return xElementsArray.indexOf(d.Name1) * heatmapCellSize;
         return yScale(d.Name1);
         })
         .attr("y", function (d) {
+            //return yElementsArray.indexOf(d.Name2) * heatmapCellSize;
             return yScale(d.Name2);
         })
         .attr("fill", function (d) {

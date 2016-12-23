@@ -81,3 +81,4 @@ function setAllMonth(newMonth) {
 var month = 1;
 setAll(month, x_from, x_to);
 setMonth(1);
+//setAllMonth(1);
