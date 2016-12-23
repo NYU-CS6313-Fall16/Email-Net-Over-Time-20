@@ -29,9 +29,10 @@ Email is one of the most frequently used ways to communicate with others. Our pr
 ### Code Structure
 
   * index.html is the entry of the project. It has dependency on D3.js version 3.
-  * P2PHeatmap.js is to draw heatmap and it works with heatmap.css.
+  * P2PHeatmap.js is to draw heatmap and it works with heatmapStyle.css.
   * linechart.js is to draw the line chart.
-  * legendBar.js is to draw bar chart.
+  * barchart.js is to draw bar chart.
+  * legendBar.js is to draw slider.
   * util.js provides some helper functions to format given data.
 
 ### Data Source
