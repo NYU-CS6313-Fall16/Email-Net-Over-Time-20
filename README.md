@@ -11,6 +11,7 @@ Team Members: [Bo Wang](https://github.com/bw1332), [Cheng Ma](https://github.co
 
 ### Description
 Email is one of the most frequently used ways to communicate with others. Our project is to visualize the social network created by given email dataset over time. The visualization shows both volume and content change during specified time intervals. There are mainly three views in our visualization.
+
 1. **Heatmap**
 
   Consider about the communication pattern of emails, Heatmap is a quite clear way to show the relations among contacts in our email dataset. The blocks in the heatmap represents the amount of communications between the two persons. The darker the block is, the more the emails they sent or received. There are two angles to observe this part of data. The "total" button represents the total number of sending and receiving between two persons. The "from/to" button represent the number of sending emails from one to the other. Comparing these two angles we could have chance to find the roles they played in their communications. The heatmap shows the data for the given month, it could be changed by user using the slider.
